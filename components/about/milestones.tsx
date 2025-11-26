@@ -13,7 +13,7 @@ export function Milestones() {
   ]
 
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto">
+    <section className="py-20 px-3 max-w-7xl mx-auto">
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance" style={{ color: "#1a1a1a" }}>
           Our Milestones
@@ -52,7 +52,7 @@ export function Milestones() {
 
               {/* Timeline dot */}
               <div
-                className="hidden md:flex w-12 h-12 rounded-full border-4 items-center justify-center"
+                className="hidden  z-50 md:flex w-12 h-12 rounded-full border-4 items-center justify-center"
                 style={{
                   borderColor: "#DC9D14",
                   backgroundColor: "#ffffff",

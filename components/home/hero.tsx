@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import Aurora from "../herobg"
 import BlurText from "../blurText"
+import { CheckCircle } from "lucide-react"
 
 export function Home() {
   const [scrollY, setScrollY] = useState(0)
@@ -15,6 +16,12 @@ export function Home() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+  const trustBadges = [
+    "ISO Certified",
+    "Fortune 500 Partners",
+    "Award-Winning Firm",
+    "Global Operations",
+  ]
 
   return (
     <section
@@ -46,7 +53,7 @@ export function Home() {
       >
         <BlurText
           text="A firm built on TRUST"
-          delay={150}
+          delay={300}
           animateBy="words"
           direction="top"
           // onAnimationComplete={handleAnimationComplete}
@@ -64,6 +71,21 @@ export function Home() {
         >
           Get Started
         </button>
+      </div>
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-wrap justify-center gap-5 z-20">
+        {trustBadges.map((badge, i) => (
+          <div
+            key={i}
+            className="flex items-center gap-2 text-white/80 text-sm font-medium bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20"
+            style={{
+              
+              transitionDelay: `${i * 80}ms`,
+            }}
+          >
+            <CheckCircle className="w-4 h-4" style={{ color: "#DC9D14" }} />
+            {badge}
+          </div>
+        ))}
       </div>
     </section>
   )

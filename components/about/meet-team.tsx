@@ -1,9 +1,8 @@
 export function MeetTeam() {
   const team = [
-    { name: "John Smith", position: "Chief Executive Officer", image: "/professional-ceo-portrait.jpg" },
-    { name: "Sarah Johnson", position: "Chief Operations Officer", image: "/professional-woman-portrait.jpg" },
-    { name: "Michael Chen", position: "Chief Technology Officer", image: "/professional-man-tech.jpg" },
-    { name: "Emily Williams", position: "Director of Strategy", image: "/professional-woman-strategy.jpg" },
+    { name: "Adnan", position: "Chief Executive Officer", image: "/professional-ceo-portrait.jpg" },
+    { name: "Mazhood", position: "Chief Executive Officer", image: "/professional-woman-portrait.jpg" },
+    { name: "Saheel", position: "Chief Executive Officer", image: "/professional-man-tech.jpg" },
   ]
 
   return (
@@ -16,7 +15,7 @@ export function MeetTeam() {
           <div className="w-24 h-1 mx-auto" style={{ backgroundColor: "#DC9D14" }} />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {team.map((member, idx) => (
             <div key={idx} className="text-center">
               <div className="mb-4 rounded-lg overflow-hidden">

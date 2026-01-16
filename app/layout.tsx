@@ -16,15 +16,15 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/assets/icon.png",
+        url: "/assets/icononly.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/assets/icon.png",
+        url: "/assets/icononly.png",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/assets/icon.png",
+        url: "/assets/icononly.png",
         type: "image/svg+xml",
       },
     ],
@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
-        <Navbar/>
+        <Navbar />
         {children}
         <Footer />
         <Analytics />

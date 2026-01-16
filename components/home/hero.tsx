@@ -57,12 +57,12 @@ export function Home() {
           animateBy="words"
           direction="top"
           // onAnimationComplete={handleAnimationComplete}
-          className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-balance text-white" 
+          className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-balance text-white"
         />
         <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-balance" style={{ color: "#ffffff" }}>
           {/* <span style={{ color: "#ffaf00" }}>TRUST</span> */}
         </h1>
-        <p className="text-lg md:text-xl mb-8 text-balance" style={{ color: "#DC9D14", fontFamily: 'fantasy' }}>
+        <p className="text-lg md:text-xl mb-8 text-balance" style={{ color: "#DC9D14", fontFamily: 'monospace' }}>
           Premium corporate solutions tailored for your business needs
         </p>
         <button
@@ -78,7 +78,7 @@ export function Home() {
             key={i}
             className="flex items-center gap-2 text-white/80 text-sm font-medium bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20"
             style={{
-              
+
               transitionDelay: `${i * 80}ms`,
             }}
           >

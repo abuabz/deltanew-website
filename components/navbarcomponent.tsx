@@ -5,6 +5,7 @@ import { gsap } from 'gsap';
 // use your own icon import if react-icons is not available
 import { GoArrowUpRight } from 'react-icons/go';
 import Link from 'next/link';
+import Image, { StaticImageData } from 'next/image';
 
 type CardNavLink = {
   label: string;
@@ -20,7 +21,7 @@ export type CardNavItem = {
 };
 
 export interface CardNavProps {
-  // logo: any;
+  logo?: string | StaticImageData;
   logoAlt?: string;
   items: CardNavItem[];
   className?: string;
@@ -32,7 +33,7 @@ export interface CardNavProps {
 }
 
 const CardNav: React.FC<CardNavProps> = ({
-  // logo,
+  logo,
   logoAlt = 'Logo',
   items,
   className = '',
@@ -160,7 +161,7 @@ const CardNav: React.FC<CardNavProps> = ({
 
   return (
     <div
-      className={`card-nav-container absolute left-1/2 -translate-x-1/2 w-[90%] max-w-[800px] z-[99] top-[1.2em] md:top-[2em] fixed rounded-2xl bg-[#b2b2b231] backdrop-blur-lg ${className}`}
+      className={`card-nav-container absolute left-1/2 -translate-x-1/2 w-[90%] max-w-[900px] z-[99] top-[1.2em] md:top-[2em] fixed rounded-2xl bg-[#ffffff9d] backdrop-blur-lg ${className}`}
     >
       <nav
         ref={navRef}
@@ -188,7 +189,13 @@ const CardNav: React.FC<CardNavProps> = ({
 
           <Link href="/">
             <div className="logo-container flex items-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 order-1 md:order-none">
-              {/* <img src='./assets/icon.png' alt={logoAlt} className="logo h-1/2" /> */}
+              {logo && (
+                typeof logo === 'string' ? (
+                  <img src={logo} alt={logoAlt} className="logo h-8 w-auto" />
+                ) : (
+                  <Image src={logo} alt={logoAlt} className="logo h-8 w-auto" />
+                )
+              )}
             </div>
           </Link>
           <button

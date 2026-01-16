@@ -5,9 +5,12 @@ export function AboutBanner() {
       <div
         className="absolute inset-0"
         style={{
-          background: "url(/placeholder.svg?height=600&width=1920&query=corporate-office)",
+          background: "url(/assets/aboutimg.jpeg)",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top",
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+
         }}
       />
 

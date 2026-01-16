@@ -1,7 +1,7 @@
 "use client";
 
 import CardNav from './navbarcomponent';
-// import logoImg from './assets/icon.png';
+import logoImg from '../public/assets/icon.png';
 const Navbar = () => {
   const items = [
     {
@@ -14,7 +14,7 @@ const Navbar = () => {
       ]
     },
     {
-      label: "Services", 
+      label: "Services",
       bgColor: "#000000",
       textColor: "#fff",
       links: [
@@ -24,7 +24,7 @@ const Navbar = () => {
     },
     {
       label: "Contact",
-      bgColor: "#8b630d", 
+      bgColor: "#8b630d",
       textColor: "#fff",
       links: [
         { label: "Contact us", href: "contact", ariaLabel: "contact us" },
@@ -36,16 +36,16 @@ const Navbar = () => {
 
   return (
     <CardNav
-      // logo={logoImg}
-      
+      logo={logoImg}
+
       logoAlt="Company Logo"
       items={items}
       baseColor="#00000000"
-      menuColor="#fff"
+      menuColor="#DC9D14"
       buttonBgColor="#111"
       buttonTextColor="#fff"
       ease="power3.out"
-  
+
     />
   );
 };

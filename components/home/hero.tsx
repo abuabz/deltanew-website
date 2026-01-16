@@ -72,11 +72,11 @@ export function Home() {
           Get Started
         </button>
       </div>
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-wrap justify-center gap-5 z-20">
+      <div className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 grid grid-cols-2 md:flex md:flex-nowrap justify-center items-center gap-2 md:gap-5 z-20 w-max max-w-[95vw]">
         {trustBadges.map((badge, i) => (
           <div
             key={i}
-            className="flex items-center gap-2 text-white/80 text-sm font-medium bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20"
+            className="flex items-center gap-1.5 md:gap-2 text-white/80 text-[11px] md:text-sm font-medium bg-white/10 backdrop-blur-md px-3 py-1.5 md:px-5 md:py-2 rounded-full border border-white/20 whitespace-nowrap"
             style={{
 
               transitionDelay: `${i * 80}ms`,

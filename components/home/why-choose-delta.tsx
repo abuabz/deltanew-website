@@ -39,7 +39,7 @@ export function WhyChooseDelta() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance" style={{ color: "#1a1a1a" }}>
-            Why Choose  
+            Why Choose
             <span className="font-bold text-[#DC9D14]"> Delta</span>
           </h2>
           <div className="w-24 h-1 mx-auto" style={{ backgroundColor: "#DC9D14" }} />

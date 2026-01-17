@@ -70,7 +70,7 @@ export function Home() {
           animateBy="words"
           direction="top"
           // onAnimationComplete={handleAnimationComplete}
-          className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-balance text-white"
+          className="text-3xl justify-center md:text-7xl font-bold leading-tight mb-6 text-balance text-white "
         />
         <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-balance" style={{ color: "#ffffff" }}>
           {/* <span style={{ color: "#ffaf00" }}>TRUST</span> */}

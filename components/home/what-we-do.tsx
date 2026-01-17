@@ -72,7 +72,7 @@ export function WhatWeDo() {
                             Solutions
                         </h2>
                         <p className="text-lg text-[#1a1a1a]/70 mb-10 leading-relaxed">
-                            We empower businesses with precision-driven financial management. From day-to-day record keeping to high-level strategic advisory.
+                            We empower businesses with precision-driven financial management. From day-to-day record keeping to high-level strategic advisory, We turn your data into actionable growth.
                         </p>
                         <div className="hidden lg:block">
                             <div className="w-20 h-1 bg-[#fba844] rounded-full" />

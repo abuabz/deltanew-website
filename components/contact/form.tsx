@@ -103,11 +103,21 @@ export function ContactForm() {
                     Business Hours
                   </p>
                   <p style={{ color: "#6F6F71" }}>
-                    Monday - Friday: 9:00 AM - 6:00 PM
-                    <br />
-                    Saturday: 10:00 AM - 4:00 PM
+                    Monday - Saturday: 9:30 AM - 05:30 PM (IST)
+
                     <br />
                     Sunday: Closed
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-4 items-start">
+                <Clock size={24} style={{ color: "#DC9D14", flexShrink: 0, marginTop: "2px" }} />
+                <div>
+                  <p className="font-bold mb-1" style={{ color: "#1a1a1a" }}>
+                    Working Hours
+                  </p>
+                  <p style={{ color: "#6F6F71" }} className="flex flex-row">
+                    Monday - Sunday: 24x7
                   </p>
                 </div>
               </div>

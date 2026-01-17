@@ -25,18 +25,18 @@ export function AboutSection() {
   const features = [
     {
       icon: <TrendingUp className="w-6 h-6" />,
-      title: "Strategic Growth",
-      description: "Driving your business forward with data-backed corporate strategies."
+      title: "Strategic Financial Growth",
+      description: "Driving your business forward with accurate, data-backed financial insights and reporting."
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Expert Consulting",
-      description: "A team of seasoned professionals dedicated to your success."
+      title: "Expert Accounting Team",
+      description: "A team of seasoned CA/CMAs and qualified professionals dedicated to your fiscal stability and success."
     },
     {
       icon: <Award className="w-6 h-6" />,
-      title: "Premium Quality",
-      description: "Uncompromising standards in every solution we deliver."
+      title: "Precision and Security",
+      description: "Uncompromising standards of accuracy, compliance, and data security in every process we handle."
     }
   ];
 
@@ -76,8 +76,8 @@ export function AboutSection() {
             </div>
 
             <p className="text-md lg:text-lg text-gray-600 leading-relaxed max-w-xl">
-              With years of expertise in corporate solutions, DELTA is committed to delivering premium services that drive
-              your business forward. We provide tailored solutions that work.
+              With years of expertise in accounts outsourcing and financial management, DELTA is committed to delivering premium services that drive
+              your business forward. We provide tailored bookkeeping and accounting solutions that work seamlessly with your oparations, allowing you to focus on what you do best.
             </p>
 
             <div className="grid gap-4 lg:gap-6 py-2">
@@ -95,7 +95,7 @@ export function AboutSection() {
                   </div>
                   <div>
                     <h4 className="text-base lg:text-lg font-bold text-[#1a1a1a] mb-0.5 lg:mb-1">{feature.title}</h4>
-                    <p className="text-sm lg:text-base text-gray-500 line-clamp-1">{feature.description}</p>
+                    <p className="text-sm lg:text-base text-gray-500 line-clamp-2">{feature.description}</p>
                   </div>
                 </motion.div>
               ))}

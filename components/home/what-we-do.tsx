@@ -10,6 +10,7 @@ import {
     TrendingUp,
     ArrowRight
 } from "lucide-react";
+import Link from "next/link";
 
 export function WhatWeDo() {
     const services = [
@@ -104,15 +105,17 @@ export function WhatWeDo() {
                                 <p className="text-[#1a1a1a]/70 leading-relaxed mb-6 grow">
                                     {service.description}
                                 </p>
+                                <Link href={`https://wa.me/917012828331?text=Iam Interest to know about ${service.title}`} target="_blank">
+                                    <div className="flex items-center text-xs font-bold uppercase tracking-widest text-[#fba844] group-hover:gap-2 transition-all cursor-pointer">
+                                        get in touch <ArrowRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-all" />
+                                    </div>
+                                </Link>
 
-                                <div className="flex items-center text-xs font-bold uppercase tracking-widest text-[#fba844] group-hover:gap-2 transition-all cursor-pointer">
-                                    Learn More <ArrowRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-all" />
-                                </div>
                             </motion.div>
                         ))}
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

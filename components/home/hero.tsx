@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Aurora from "../herobg"
 import BlurText from "../blurText"
-import { CheckCircle } from "lucide-react"
+import { CheckCircle, LockKeyhole, Clock, User } from "lucide-react"
 import Image from "next/image"
 
 export function Home() {
@@ -18,10 +18,16 @@ export function Home() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
   const trustBadges = [
-    "ISO Certified",
-    "Fortune 500 Partners",
-    "Award-Winning Firm",
-    "Global Operations",
+    "100% Data Secure",
+    "24/7 Global Support",
+    "CA/CMA Experts",
+    "Zero Error Guarantee",
+  ]
+  const trustbadgesIcons = [
+    <LockKeyhole className="w-4 h-4" style={{ color: "#DC9D14" }} />,
+    <Clock className="w-4 h-4" style={{ color: "#DC9D14" }} />,
+    <User className="w-4 h-4" style={{ color: "#DC9D14" }} />,
+    <CheckCircle className="w-4 h-4" style={{ color: "#DC9D14" }} />,
   ]
 
   return (
@@ -50,7 +56,7 @@ export function Home() {
       {/* Aurora Background Effect */}
       <div className="absolute inset-0 z-10 mix-blend-screen opacity-70">
         <Aurora
-          colorStops={["#DC9D14", "#ffffff", "#DC9D14"]}
+          colorStops={["", "#ffffff",]}
           blend={1}
           amplitude={1.0}
           speed={0.35}
@@ -64,26 +70,40 @@ export function Home() {
           transform: `translateY(${scrollY * -0.2}px)`,
         }}
       >
-        <BlurText
-          text="A firm built on TRUST"
-          delay={300}
-          animateBy="words"
-          direction="top"
-          // onAnimationComplete={handleAnimationComplete}
-          className="text-3xl justify-center md:text-7xl font-bold leading-tight mb-6 text-balance text-white "
-        />
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-balance" style={{ color: "#ffffff" }}>
-          {/* <span style={{ color: "#ffaf00" }}>TRUST</span> */}
-        </h1>
-        <p className="text-lg md:text-xl mb-8 text-balance" style={{ color: "#DC9D14", fontFamily: 'monospace' }}>
-          Premium corporate solutions tailored for your business needs
+        <div className="flex gap-0 justify-center flex-col md:flex-row md:gap-2 whitespace-normal md:whitespace-nowrap items-center text-center">
+          <BlurText
+            text="A Firm Built on"
+            delay={300}
+            animateBy="words"
+            direction="top"
+            // onAnimationComplete={handleAnimationComplete}
+            className="text-4xl md:text-6xl font-bold leading-tight mb-2 md:mb-6 text-balance text-white font-robotoslab"
+          />
+          <BlurText
+            text="TRUST"
+            delay={300}
+            animateBy="letters"
+            direction="top"
+            // onAnimationComplete={handleAnimationComplete}
+            className="text-5xl md:text-6xl font-extrabold leading-tight mb-2 md:mb-6 text-balance text-[#ffaf00] font-robotoslab"
+          />
+        </div>
+
+        {/* <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-balance" style={{ color: "#ffffff" }}>
+          <span style={{ color: "#ffaf00" }}>TRUST</span>
+        </h1> */}
+        <p className=" mt-2 md:-mt-2 text-sm md:text-xl md:block hidden  text-balance" style={{ color: "#DC9D14", fontFamily: 'monospace' }}>
+          Reliable book Keeping Solutions Engineered for your piece of mind
         </p>
-        <button
+        <p className=" mt-2 md:-mt-2 text-sm md:text-xl md:hidden block  text-balance" style={{ color: "#DC9D14", fontFamily: 'monospace' }}>
+          World-Class Accounting,Tailored for you
+        </p>
+        {/* <button
           className="px-8 py-3 rounded-md text-white font-semibold transition-all hover:shadow-lg hover:scale-105 md:text-lg"
           style={{ backgroundColor: "#DC9D14" }}
         >
           Get Started
-        </button>
+        </button> */}
       </div>
       <div className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 grid grid-cols-2 md:flex md:flex-nowrap justify-center items-center gap-2 md:gap-5 z-20 w-max max-w-[95vw]">
         {trustBadges.map((badge, i) => (
@@ -95,7 +115,7 @@ export function Home() {
               transitionDelay: `${i * 80}ms`,
             }}
           >
-            <CheckCircle className="w-4 h-4" style={{ color: "#DC9D14" }} />
+            {trustbadgesIcons[i]}
             {badge}
           </div>
         ))}

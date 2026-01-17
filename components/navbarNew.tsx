@@ -16,7 +16,7 @@ import {
     SheetDescription,
     SheetHeader,
 } from "@/components/ui/sheet";
-import logoImg from "@/public/assets/icon.png";
+import logoImg from "@/public/assets/icononly.png";
 
 const navLinks = [
     { name: "Home", href: "/" },
@@ -40,10 +40,10 @@ export function NavbarNew() {
     return (
         <header
             className={cn(
-                "fixed z-50 transition-all duration-300 border-b border-transparent",
+                "fixed z-50  duration-300 border-b border-transparent",
                 isScrolled
-                    ? "top-5 left-1/2 -translate-x-1/2 bg-white/50 w-[95%] md:w-[70%] rounded-full py-2 shadow-lg backdrop-blur-sm border border-white/20"
-                    : "top-5 left-1/2 -translate-x-1/2 bg-white/70 w-[95%] md:w-[70%] rounded-full py-2 shadow-lg backdrop-blur-md border border-white/20"
+                    ? "top-5 left-1/2 -translate-x-1/2 bg-white/50 w-[95%] md:w-[70%] rounded-full py-0 shadow-lg backdrop-blur-[4px] border border-white/40"
+                    : "top-5 left-1/2 -translate-x-1/2 bg-white/50 w-[95%] md:w-[70%] rounded-full py-0 shadow-lg backdrop-blur-[4px] border border-white/40"
             )}
         >
             <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
@@ -52,9 +52,9 @@ export function NavbarNew() {
                     <Image
                         src={logoImg}
                         alt="Delta Business Solutions"
-                        width={60}
-                        height={60}
-                        className="w-auto h-12 object-contain"
+                        width={50}
+                        height={50}
+                        className="w-auto h-10 object-contain"
                     />
 
                 </Link>
@@ -68,22 +68,22 @@ export function NavbarNew() {
                             className={cn(
                                 "text-sm font-medium transition-colors text-md hover:text-[#dc9d14]",
                                 pathname === link.href ? "text-[#dc9d14]" :
-                                    (isScrolled ? "text-foreground" : "text-white mix-blend-difference")
+                                    (isScrolled ? "text-black" : "text-black ")
                             )}
                         >
                             {link.name}
                         </Link>
                     ))}
-                    <Button className="bg-[#dc9d14] hover:bg-[#b88210] text-white rounded-full px-6">
+                    {/* <Button className="bg-[#dc9d14] hover:bg-[#b88210] text-white rounded-full px-6">
                         Get Started
-                    </Button>
+                    </Button> */}
                 </nav>
 
                 {/* Mobile Navigation (Hamburger) */}
                 <div className="md:hidden">
                     <Sheet>
                         <SheetTrigger asChild>
-                            <Button variant="ghost" size="icon" className={cn(isScrolled ? "text-foreground" : "text-white mix-blend-difference")}>
+                            <Button variant="ghost" size="icon" className={cn(isScrolled ? "text-black" : "text-black mix-blend-difference")}>
                                 <Menu className="h-6 w-6" />
                                 <span className="sr-only">Toggle menu</span>
                             </Button>
@@ -109,7 +109,7 @@ export function NavbarNew() {
                                             href={link.href}
                                             className={cn(
                                                 "text-lg font-medium transition-colors hover:text-[#dc9d14] p-2 rounded-md hover:bg-black/5",
-                                                pathname === link.href ? "text-[#dc9d14]" : "text-foreground"
+                                                pathname === link.href ? "text-[#dc9d14]" : "text-black"
                                             )}
                                         >
                                             {link.name}

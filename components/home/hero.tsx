@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Aurora from "../herobg"
 import BlurText from "../blurText"
 import { CheckCircle } from "lucide-react"
+import Image from "next/image"
 
 export function Home() {
   const [scrollY, setScrollY] = useState(0)
@@ -30,19 +31,31 @@ export function Home() {
         background: "linear-gradient(135deg, #000000 0%, #000000 100%)",
       }}
     >
-      {/* Background with Parallax Effect */}
-      <Aurora
-        colorStops={["#DC9D14", "#ffffff", "#DC9D14"]}
-        blend={1}
-        amplitude={1.0}
-        speed={0.7}
-      />
+      {/* Background Image Layer */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/assets/hero-bg.png"
+          alt="Corporate Background"
+          fill
+          priority
+          className="object-cover opacity-60 grayscale"
+          style={{
+            transform: `translateY(${scrollY * 0.1}px)`,
+          }}
+        />
+        {/* Dark Overlay for contrast */}
+        <div className="absolute inset-0 bg-black/50" />
+      </div>
 
-      {/* Dark Overlay with Parallax */}
-      <div
-        className="absolute inset-0"
-
-      />
+      {/* Aurora Background Effect */}
+      <div className="absolute inset-0 z-10 mix-blend-screen opacity-70">
+        <Aurora
+          colorStops={["#DC9D14", "#ffffff", "#DC9D14"]}
+          blend={1}
+          amplitude={1.0}
+          speed={0.35}
+        />
+      </div>
 
       {/* Content with Counter-Parallax */}
       <div

@@ -29,7 +29,7 @@ const Navbar = () => {
       links: [
         { label: "Contact us", href: "contact", ariaLabel: "contact us" },
         { label: "Mail", href: "mailto:someone@example.com", ariaLabel: "Twitter" },
-        { label: "Whatsapp", href: "https://wa.me/918111866093/?text=Hi", ariaLabel: "Whatsapp" }
+        { label: "Whatsapp", href: "https://wa.me/917012828331/?text=Hi", ariaLabel: "Whatsapp" }
       ]
     }
   ];

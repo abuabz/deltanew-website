@@ -45,11 +45,10 @@ export function ContactForm() {
                     Address
                   </p>
                   <p style={{ color: "#6F6F71" }}>
-                    123 Business Avenue
+                    VPC Mall , Vengara
                     <br />
-                    Suite 100, New York, NY 10001
-                    <br />
-                    United States
+                    Malappuram, Kerala,India
+
                   </p>
                 </div>
               </div>
@@ -62,19 +61,19 @@ export function ContactForm() {
                     Email
                   </p>
                   <a
-                    href="mailto:info@delta.com"
+                    href="mailto:info@deltabusinesssolution.com"
                     className="transition-colors hover:opacity-80"
                     style={{ color: "#6F6F71" }}
                   >
-                    info@delta.com
+                    info@deltabusinesssolution.com
                   </a>
                   <br />
                   <a
-                    href="mailto:support@delta.com"
+                    href="mailto:dbsin2021@gmail.com"
                     className="transition-colors hover:opacity-80"
                     style={{ color: "#6F6F71" }}
                   >
-                    support@delta.com
+                    dbsin2021@gmail.com
                   </a>
                 </div>
               </div>
@@ -87,19 +86,11 @@ export function ContactForm() {
                     Phone
                   </p>
                   <a
-                    href="tel:+12125551234"
+                    href="tel:+917012828331"
                     className="transition-colors hover:opacity-80"
                     style={{ color: "#6F6F71" }}
                   >
-                    +1 (212) 555-1234
-                  </a>
-                  <br />
-                  <a
-                    href="tel:+12125555678"
-                    className="transition-colors hover:opacity-80"
-                    style={{ color: "#6F6F71" }}
-                  >
-                    +1 (212) 555-5678
+                    +91 70128 28331
                   </a>
                 </div>
               </div>

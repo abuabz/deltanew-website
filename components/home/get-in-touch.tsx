@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Instagram } from "lucide-react"
 
 export function GetInTouch() {
   const [formData, setFormData] = useState({
@@ -38,16 +38,25 @@ export function GetInTouch() {
                   Connect With Us
                 </h3>
                 <div className="flex gap-4">
-                  {["LinkedIn", "Twitter", "Facebook", "Instagram"].map((social) => (
-                    <a
-                      key={social}
-                      href="#"
-                      className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110"
-                      style={{ backgroundColor: "#E5E5E5", color: "#DC9D14" }}
-                    >
-                      <span className="text-xs font-bold">{social[0]}</span>
-                    </a>
-                  ))}
+                  {[
+                    { icon: Linkedin, label: "LinkedIn" },
+                    { icon: Twitter, label: "Twitter" },
+                    { icon: Facebook, label: "Facebook" },
+                    { icon: Instagram, label: "Instagram" }
+                  ].map((social) => {
+                    const Icon = social.icon
+                    return (
+                      <a
+                        key={social.label}
+                        href="#"
+                        className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-sm"
+                        style={{ backgroundColor: "#E5E5E5", color: "#DC9D14" }}
+                        aria-label={social.label}
+                      >
+                        <Icon size={20} />
+                      </a>
+                    )
+                  })}
                 </div>
               </div>
 
@@ -59,11 +68,11 @@ export function GetInTouch() {
                     Email
                   </p>
                   <a
-                    href="mailto:info@delta.com"
+                    href="mailto:dbsin2021@gmail.com"
                     className="transition-colors hover:text-amber-600"
                     style={{ color: "#6F6F71" }}
                   >
-                    info@delta.com
+                    dbsin2021@gmail.com
                   </a>
                 </div>
               </div>
@@ -76,12 +85,11 @@ export function GetInTouch() {
                     Phone
                   </p>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+917012828331"
                     className="transition-colors hover:text-amber-600"
                     style={{ color: "#6F6F71" }}
                   >
-                    +1 (234) 567-890
-                  </a>
+                    +91 70128 28331                  </a>
                 </div>
               </div>
 
@@ -93,10 +101,9 @@ export function GetInTouch() {
                     Location
                   </p>
                   <p style={{ color: "#6F6F71" }}>
-                    123 Business Ave, Suite 100
+                    VPC Mall , Vengara
                     <br />
-                    New York, NY 10001
-                  </p>
+                    Malappuram,Kerala                  </p>
                 </div>
               </div>
             </div>

@@ -27,11 +27,11 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <Image
-                src="/assets/icon.png"
+                src="/assets/iconnameonly.png"
                 alt="DELTA Logo"
                 width={180}
                 height={180}
-                className="brightness-0 invert"
+                className="brightness-0 invert -ml-1"
               />
             </div>
             <p className="text-gray-200">

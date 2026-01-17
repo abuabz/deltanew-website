@@ -191,9 +191,9 @@ const CardNav: React.FC<CardNavProps> = ({
             <div className="logo-container flex items-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 order-1 md:order-none">
               {logo && (
                 typeof logo === 'string' ? (
-                  <img src={logo} alt={logoAlt} className="logo h-8 w-auto" />
+                  <img src={logo} alt={logoAlt} className="logo h-14 w-auto" />
                 ) : (
-                  <Image src={logo} alt={logoAlt} className="logo h-8 w-auto" />
+                  <Image src={logo} alt={logoAlt} className="logo h-14 w-auto" />
                 )
               )}
             </div>

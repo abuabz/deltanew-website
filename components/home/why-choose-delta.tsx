@@ -9,37 +9,37 @@ export function WhyChooseDelta() {
     {
       icon: Award,
       title: "Industry Excellence",
-      description: "Recognized for delivering premium solutions with world-class standards.",
+      description: "We bring a higher level of scrutiny and detail to your accounts, eliminating errors before they happen.",
       gradient: "from-[#fba844] to-[#e8912d]"
     },
     {
       icon: Zap,
       title: "Fast Implementation",
-      description: "Quick deployment with minimal disruption to your daily operations.",
+      description: "Our streamlined setup process handles all data migration and software configuration, getting you up and running instantly.",
       gradient: "from-[#1a1a1a] to-[#4a4b4f]"
     },
     {
       icon: Users,
       title: "Expert Team",
-      description: "Dedicated professionals with decades of combined corporate expertise.",
+      description: "Access a ready-made team of skilled accountants and tax experts who act as an extension of your own office.",
       gradient: "from-[#fba844] to-[#fbc17a]"
     },
     {
       icon: TrendingUp,
       title: "Growth Focused",
-      description: "Solutions designed to scale seamlessly as your business expands.",
+      description: "Our flexible outsourcing model adapts to your needs, giving you the support to launch new products or branches confidently.",
       gradient: "from-[#1a1a1a] to-[#3a3b3e]"
     },
     {
       icon: Shield,
       title: "Secure & Reliable",
-      description: "Enterprise-grade security and reliability you can depend on 24/7.",
+      description: "We employ enterprise-grade security measures and backup systems to ensure your critical business data is safe and always accessible.",
       gradient: "from-[#fba844] to-[#f7941e]"
     },
     {
       icon: Target,
       title: "Results Driven",
-      description: "Deeply focused on delivering measurable and impactful business outcomes.",
+      description: "From timely reports to strategic advice, we deliver the clarity and insights you need to make profitable business decisions.",
       gradient: "from-[#1a1a1a] to-[#000000]"
     },
   ];
@@ -70,7 +70,7 @@ export function WhyChooseDelta() {
             </h2>
             <div className="w-24 h-1.5 mx-auto bg-linear-to-r from-[#fba844] to-[#1a1a1a] rounded-full" />
             <p className="mt-8 text-lg text-[#1a1a1a]/80 max-w-2xl mx-auto leading-relaxed">
-              We combine innovation with experience to deliver corporate solutions that don't just solve problems, but drive sustainable growth.
+              Accounting reimagined for the modern enterprise. We don't just record your history; we help you shape your future. By integrating robust financial systems with forward-looking advisory, we build the scalable foundation your business needs to grow.
             </p>
           </motion.div>
         </div>

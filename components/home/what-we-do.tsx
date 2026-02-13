@@ -16,33 +16,38 @@ export function WhatWeDo() {
     const services = [
         {
             title: "Bookkeeping and Record Management",
-            description: "Precise recording of all financial transactions and systematic management of business records to ensure accuracy and ease of access.",
+            description: "Maintain impeccable financial health with our precision-driven bookkeeping services. We ensure every transaction is meticulously recorded and organized, guaranteeing regulatory compliance and instant access to your financial data when you need it.",
             icon: <BookOpen className="w-8 h-8" />,
-            color: "#fba844"
+            color: "#fba844",
+            button: "Schedule a Consultation"
         },
         {
-            title: "Financial Reporting and Analysis",
-            description: "Comprehensive financial statements and deep-dive analysis to provide a clear picture of your business's financial health and performance.",
+            title: "Actionable Financial Insights",
+            description: "Go beyond standard spreadsheets. We transform complex data into clear, strategic reports that reveal the true story behind your numbers. From profitability analysis to cash flow trends, get the deep-dive intelligence you need to make confident business decisions.",
             icon: <BarChart3 className="w-8 h-8" />,
-            color: "#1a1a1a"
+            color: "#1a1a1a",
+            button: "Get a Sample Report"
         },
         {
-            title: "Financial System Setup and Consulting",
-            description: "Tailored setup of robust financial systems and expert consulting to streamline your accounting processes and improve efficiency.",
+            title: "Scalable Financial Systems",
+            description: "Build a financial backbone that grows with your business. We don't just fix today's problems; we design and implement custom accounting workflows and internal controls that eliminate bottlenecks, reduce manual errors, and prepare you for future expansion.",
             icon: <Settings className="w-8 h-8" />,
-            color: "#fba844"
+            color: "#fba844",
+            button: "Build My System"
         },
         {
-            title: "Taxation and Compliance",
-            description: "Expert guidance on tax planning and ensuring full compliance with local and international regulations to mitigate risks.",
+            title: "Strategic Tax Planning",
+            description: "Don't just pay taxes; optimize them. Our expert team provides proactive tax planning strategies designed to minimize liabilities while maintaining full legal compliance. We help you structure your finances efficiently so you keep more of what you earn.",
             icon: <ShieldCheck className="w-8 h-8" />,
-            color: "#1a1a1a"
+            color: "#1a1a1a",
+            button: "Optimize My Taxes"
         },
         {
-            title: "Strategic Financial Management & Advisory",
-            description: "Forward-looking financial strategies and advisory services to help you make informed decisions for long-term growth and stability.",
+            title: "Virtual CFO & Advisory",
+            description: "Access high-level financial leadership without the overhead. We act as your strategic partner, guiding you through complex market shifts, investment decisions, and long-term planning to ensure your business stays profitable and resilient.",
             icon: <TrendingUp className="w-8 h-8" />,
-            color: "#fba844"
+            color: "#fba844",
+            button: "Get Strategic Advice"
         }
     ];
 
@@ -107,7 +112,8 @@ export function WhatWeDo() {
                                 </p>
                                 <Link href={`https://wa.me/917012828331?text=Iam Interest to know about ${service.title}`} target="_blank">
                                     <div className="flex items-center text-xs font-bold uppercase tracking-widest text-[#fba844] group-hover:gap-2 transition-all cursor-pointer">
-                                        get in touch <ArrowRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-all" />
+                                        {service.button}
+                                        <ArrowRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-all" />
                                     </div>
                                 </Link>
 

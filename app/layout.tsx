@@ -17,24 +17,20 @@ const robotoSlab = Roboto_Slab({
 export const metadata: Metadata = {
   title: "Delta Business Solutions - Premium Corporate Solutions",
   description: "A firm built on TRUST. Premium corporate and business solutions.",
-  generator: "abu",
+  generator: "Delta Business Solutions",
+
   icons: {
     icon: [
-      {
-        url: "/assets/icononly.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/assets/icononly.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/assets/icononly.png",
-        type: "image/svg+xml",
-      },
+      { url: "/assets/favicon.ico" },
+      { url: "/assets/favicon.svg", type: "image/svg+xml" },
+      { url: "/assets/favicon-96x96.png", sizes: "96x96", type: "image/png" }
     ],
-    apple: "/assets/icon.png",
+    apple: [
+      { url: "/assets/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
+    ],
   },
+
+  manifest: "/assets/site.webmanifest",
 }
 
 export default function RootLayout({

@@ -39,16 +39,15 @@ export function GetInTouch() {
                 </h3>
                 <div className="flex gap-4">
                   {[
-                    { icon: Linkedin, label: "LinkedIn" },
-                    { icon: Twitter, label: "Twitter" },
-                    { icon: Facebook, label: "Facebook" },
-                    { icon: Instagram, label: "Instagram" }
+                    { icon: Linkedin, href: "https://www.linkedin.com/in/deltabusinesssolutions?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "LinkedIn" },
+                    { icon: Facebook, href: "https://www.facebook.com/share/1CJMRcQuqi/", label: "Facebook" },
+                    { icon: Instagram, href: "https://www.instagram.com/delta_solutions_/", label: "Instagram" },
                   ].map((social) => {
                     const Icon = social.icon
                     return (
                       <a
                         key={social.label}
-                        href="#"
+                        href={social.href}
                         className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-sm"
                         style={{ backgroundColor: "#E5E5E5", color: "#DC9D14" }}
                         aria-label={social.label}
@@ -101,7 +100,7 @@ export function GetInTouch() {
                     Location
                   </p>
                   <p style={{ color: "#6F6F71" }}>
-                    VPC Mall , Vengara
+                    9/475/Z 2nd Floor, VPC Mall, Vengara
                     <br />
                     Malappuram,Kerala                  </p>
                 </div>

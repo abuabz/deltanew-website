@@ -1,13 +1,16 @@
 export function ServicesBanner() {
   return (
-    <section className="relative w-full h-80 flex items-center justify-center pt-16 overflow-hidden">
+    <section className="relative w-full h-96 flex items-center justify-center pt-16 overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0"
         style={{
-          background: "url(/placeholder.svg?height=600&width=1920&query=professional-services)",
+          background: "url(/group-people-working-out-business-plan-office.jpg)",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "bottom",
+          filter: "grayscale(1)",
         }}
       />
 

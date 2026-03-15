@@ -13,10 +13,9 @@ export function Footer() {
   ]
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/deltabusinesssolutions?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "LinkedIn" },
+    { icon: Facebook, href: "https://www.facebook.com/share/1CJMRcQuqi/", label: "Facebook" },
+    { icon: Instagram, href: "https://www.instagram.com/delta_solutions_/", label: "Instagram" },
   ]
 
   return (
@@ -71,10 +70,13 @@ export function Footer() {
               <a href="tel:+917012828331" className="block hover:text-amber-400 transition-colors">
                 +91 70128 28331
               </a>
-              <p>
-                VPC Mall, Vengara<br />
-                Malappuram, Kerala, India
-              </p>
+              <a href="https://maps.app.goo.gl/5CUhd9U9c86DbiLE8" target="_blank" rel="noopener noreferrer">
+                <p>
+                  9/475/Z 2nd Floor <br />
+                  VPC Mall, Vengara<br />
+                  Malappuram, Kerala, India
+                </p>
+              </a>
             </div>
           </div>
 
